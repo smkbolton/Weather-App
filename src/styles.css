@@ -1,0 +1,41 @@
+div.container {
+  background-color: #ccf2f4;
+  /*https://colorhunt.co/palette/258350
+  https://colorhunt.co/palette/252807
+  https://colorhunt.co/palette/226680
+  */
+}
+div.row {
+  margin: 5px;
+}
+
+.search-bar,
+.search-buttons {
+  display: block;
+  text-align: center;
+}
+
+h4,
+h6 {
+  font-weight: 300;
+}
+
+div.card .today {
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  background-color: #f4f9f9;
+}
+
+#temperature-units {
+  text-decoration: none;
+}
+
+div.card .days {
+  margin: 5px;
+  background-color: #f4f9f9;
+}
+
+span.forecast {
+  float: right;
+}

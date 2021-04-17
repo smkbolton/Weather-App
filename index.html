@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Application</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="src/index.js" rel="stylesheet" type="JavaScript" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/6b83a30398.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="card container">
+      <div class="row">
+        <div class="col-12 search-bar">
+          <form id="city-search">
+            <input
+              id="city-search-input"
+              type="text"
+              placeholder="Enter city name"
+              maxlength="col-12"
+            />
+            <input id="city-search-button" type="submit" value="Search" />
+            <input
+              id="current-city-button"
+              type="submit"
+              value="Current City"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card col-6 today">
+          <div class="today">
+            <h1 id="current-city">DENVER</h1>
+          </div>
+          <div class="today date">
+            <h4 id="current-date">
+              March 22 <br />
+              23:00
+            </h4>
+          </div>
+          <div class="today city-forecast">
+            <h3>
+              <span id="weather-icons">
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <i class="fas fa-snowflake"></i
+              ></span>
+              <br />
+              <span id="temperature"> 24 </span>
+              <span id="temperature-units">
+                <a href="#" id="temp-fahrenheit-link">ºF</a>
+                |
+                <a href="#" id="temp-celsius-link">ºC</a>
+              </span>
+            </h3>
+          </div>
+          <div class="today factors">
+            <!--
+            <h6>Rain: <span id="rain">1</span>in</h6>
+            <h6>Snow: <span id="snow">2</span>in</h6>
+            -->
+            <h6>Humidity: <span id="humidity">5</span>%</h6>
+            <h6>Precipitation: <span id="precipitation">5</span>%</h6>
+            <h6>Wind: <span id="wind">6</span>mph</h6>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="row1 card days">
+            <div class="card-body">
+              Monday
+              <span class="forecast"
+                >39ºF
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <i class="fas fa-snowflake"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row2 card days">
+            <div class="card-body">
+              Tuesday
+              <span class="forecast"
+                >39ºF
+                <i class="fas fa-cloud-showers-heavy"></i>
+                <i class="fas fa-snowflake"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row3 card days">
+            <div class="card-body">
+              Wednesday
+              <span class="forecast"
+                >40ºF
+                <i class="fas fa-cloud-sun"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row4 card days">
+            <div class="card-body">
+              Thursday
+              <span class="forecast"
+                >41ºF
+                <i class="fas fa-cloud-sun"></i>
+              </span>
+            </div>
+          </div>
+          <div class="row5 card days">
+            <div class="card-body">
+              Friday
+              <span class="forecast"
+                >48ºF
+                <i class="fas fa-sun"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
